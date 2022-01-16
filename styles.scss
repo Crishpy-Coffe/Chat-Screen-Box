@@ -1,0 +1,272 @@
+    $primary:#121416;
+    $accent:#13101a;
+    $font:#bbc3cf;
+    $hover:#313036;
+    $font2: #495456;
+    $search:#383841;
+    $hover-left:#202029;
+    $user:#232f3b;
+    $alert:#ce2424;
+body{
+    box-sizing: border-box;
+    width: 100%;
+}
+*{
+    margin: 0;
+    line-height: 1.3;
+    padding: 0;
+}
+
+.container-fluid{
+   
+    .row{
+        #user-names{
+            background-color: $accent;
+            border-right: $hover 2px solid;
+            color: #fff;
+            .wraper{
+                padding: 20px 5px;
+                a{
+                    text-decoration: none;
+                }
+                .walkover{
+                    color: #fff;
+                    padding: 0 20px;
+                }
+                button{
+                    width: 7rem;
+                    float: right;
+                    color: #fff;
+                    background-color:$primary;
+                    border: 1px solid $search;
+                    border-radius: 5px;
+                    font-size: .8rem;
+                    
+                }
+            } 
+            #users{
+                i{
+                    font-size: 1.1em;
+                    margin-top: 15px;
+                    margin-left: 7px;
+                    color: $font;
+                }
+                img{
+                    width: 35px;
+                    border-radius: 50%;
+                    margin-top: 6px;
+                }
+                .user-name{
+                    text-decoration: none;
+                    color: $font;
+                    font-weight: 450;
+                    padding-top: 10px;
+                }
+                
+              p{
+                    color:$font2;
+                    font-weight:  500;
+                    height: 25px;
+                    white-space: pre-wrap;
+                    
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .row{
+                    
+                    border-bottom: 0.1px solid $hover;
+                    height: 68px;
+                
+                    .col{
+                        padding:5px 15px ;
+                        p{
+                            height: 20px;
+                        }
+                    }
+                }
+                .row:hover{
+                    background-color: $hover-left;
+                    cursor: pointer;
+                    .user-name{
+                        font-weight: 500;
+                        color: #fff;
+                    }
+                }
+            }
+            
+            .search-bar{
+                text-align:center;
+                margin-bottom: 10px;
+                
+                input{
+                    width: 85%;
+                    padding: 10px;
+                    padding-bottom: 10px;
+                    background-color:$search;
+                    border: none;
+                    position: relative;
+                    border-radius: 4px;
+                    font-size: 14px;
+                }
+                
+                button{
+                    height: 26px;
+                    width: 26px;
+                    border: none;
+                    border-radius:2px ;
+                    font-size: 30px;
+                    color: #fff;
+                    background-color: #000;
+                    position: absolute;
+                    transform: translate(-36px,5.5px);
+                    h3{
+                        margin-top:-8px;
+                    }                        
+                }
+            }
+        }
+    }
+}
+#right{
+    a{
+        text-decoration: none;
+    }
+    background-color: #1A1D21;
+    header{
+        height: 20px;
+        border-bottom: 1px solid $hover;
+        padding: 20px 10px;
+        height: 65px;
+
+        p{  
+            float: left;
+            color: $font;
+            font-weight: 500;
+            i{
+                padding:0 8px;
+            }
+        }
+        .header-right{
+            float: right;
+
+            i{
+                color: $font;
+                padding: 0 10px;
+            }
+            button{
+            background-color: $primary;
+            border:2px solid $font2;
+            border-radius: 5px;
+            padding: 0px 10px ;
+            color: $font2;
+            font-size: 15px;
+            margin-right: 10px;
+            }
+        }
+
+        .imgs{
+            margin-right: 30px;
+            .users-img{
+            text-align: center;
+            height: 34px;
+            width: 34px;
+            border-radius: 17px;
+            display: inline-block;
+            background-color:$user;
+            font-weight: bolder;
+            color: #fff;
+            padding-top: 5px;
+            }
+        }
+        img{
+            height: 30px;
+            border-radius: 15px;
+            margin-right: -15px;
+        }
+    }
+    #chats{
+        .row{
+            .msg{   
+                margin-top: 6px;
+                padding: 0px 0;
+                color: $font;
+                p{
+                margin-bottom: 7px;
+                }
+                h6{
+                    display: inline;
+                    margin: 4px 0;
+                }
+                .msg-time{
+                   color: $font2;
+                   font-size: .8em;
+                   padding: 0 10px;
+                   
+                }
+            }
+            img{
+                display: inline;
+                width: 40px;
+                border-radius: 50%;
+                margin-top: 6px;
+                margin-left: 15px;
+            }
+        }
+        .row:hover{
+            background-color: $hover;
+            cursor: pointer;
+            
+        }
+    }
+    .chat-send{
+        position: relative;
+        text-align: center;
+        top: 14px;
+        input{
+            width: 100%;
+            height: 3rem;
+            margin-bottom: 1rem;
+            background-color:$primary;
+            border: 2px solid $hover;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            padding: 0 1.3rem;
+        }
+        .input-icons{
+            bottom: 30px;
+            position: absolute;
+            display: flex;
+            margin-bottom: 0;
+            right: 20px;
+            
+            a{
+                text-decoration: none;
+                i{
+                    color:$font2 ;
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+}
+
+div.new-msg-alert{
+    height: 1px;
+    width: 1000px;
+    left: -15px;
+    background-color: $alert;
+}
+.new-msg-ind{
+    color: $alert;
+    position: absolute;
+    border: 1px solid $alert;
+    background-color:$primary;
+    font-size: 1rem ;
+    right: 50px;
+    padding:0px 13px ;
+    padding-bottom: 4px;
+    border-radius: 8px;
+    transform: translateY(-10px);
+    
+}
